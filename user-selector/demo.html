@@ -6,14 +6,31 @@
   <style type="text/css">
   input {width: 300px; padding: 3px; font-size: 16px;}
   user-selector {width: 300px; position: relative;}
+  #console {margin-top: 20px; border: 1px solid #999; width: 300px;}
   </style>
 </head>
 <body>
 
 <h3>user selector</h3>
-<user-selector data-users='[{"id":"1","name":"Qingguang Mei","lastName":"Mei"},{"id":"3","name":"Ying Cheng","lastName":"Cheng"},{"id":"4","name":"Qianhe Mei","lastName":"Mei"}]'>
+<user-selector data-users='[{"id":"1","name":"Qingguang Mei","nickname":"meikidd"},{"id":"3","name":"Ying Cheng","nickname":"Jianying"},{"id":"4","name":"Qianhe Mei","nickname":"Qianhe"},{"id":"5","name":"Yuna Mei","nickname":"una"}]'>
   <input type="text" placeholder="input username here" />
 </user-selector>
 
+<div id="console"></div>
+
+<script type="text/javascript">
+  var userSelector = document.querySelector('user-selector');
+  userSelector.setSelected([{id:1, name:'Qingguang Mei', nickname:'meikidd'}]);
+  userSelector.addEventListener('select', function() {
+    var elm = document.createElement('p');
+    elm.innerHTML = 'select:' + e.data.user.name;
+    document.querySelector('#console').appendChild(elm);
+  });
+  userSelector.addEventListener('remove', function() {
+    var elm = document.createElement('p');
+    elm.innerHTML = 'remove:' + e.data.user.name;
+    document.querySelector('#console').appendChild(elm);
+  });
+</script>
 </body>
 </html>
