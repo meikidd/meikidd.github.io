@@ -1,0 +1,46 @@
+.reveal {
+  font-size: 30px;
+}
+
+.reveal .section-title {
+  font-size: 60px;
+}
+.reveal .section-content {
+  font-size: 28px;
+}
+.reveal .section-content div {
+  font-size: 28px;
+}
+.reveal .section-half {
+  display: inline-block;
+  margin: 0;
+  padding: 8%;
+  width: 30%;
+}
+
+.reveal .text-left {
+  text-align: left;
+}
+
+.reveal .block-black {
+  background-color:#000000; 
+  color: #fff;
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 5px 20px; 
+}
+
+.reveal .img-no-border {
+   background:none; 
+   box-shadow:0 0 0; 
+   border:0;
+}
+
+.reveal pre {
+  box-shadow: 0 0 0;
+}
+.reveal pre code {
+  padding: 20px;
+  border-radius: 15px;
+}
+

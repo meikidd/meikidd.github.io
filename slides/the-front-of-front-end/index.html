@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>最前端</title>
+
+		<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/css/theme/black.css">
+		<link rel="stylesheet" href="index.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="vr-slides"></div>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="#3c78d8">
+					<div class="section-content">
+						<div class="section-half">
+							<div>PC / Mobile</div>
+							<img src="./images/qr-code.png" />
+						</div>
+						<div class="section-half">
+							<div>VR</div>
+							<img src="./images/qr-code.png" />
+						</div>
+					</div>
+				</section>
+				<section data-background-color="#fff000">
+					<h2>
+						“最”前端
+					</h2>
+				</section>
+				<section 
+					data-background-image="./images/hands-up.jpg"
+				>
+					<div class="fragment fade-in">
+						<span class="fragment fade-out">前端工程师</span>
+					</div>
+					<div class="fragment fade-in">
+						<span class="fragment fade-out">会写一点 / 有所了解</span>
+					</div>
+					<div class="fragment fade-in">
+						<span class="fragment fade-out">没有写过 / 不太了解</span>
+					</div>
+				</section>
+				<section data-background-color="#fff">
+					<h3>鄙视链</h3>
+					<img class="img-no-border" src="./images/languages.png" />
+
+					<aside class="notes">
+					身处大数据中心这样一个部门，有很多大数据专家、分布式专家、区块链专家，相对来说前端是少数派，很多人跟前端接触较少，了解也比较少，我想通过这次分享，带大家进一步认识“前端”这个岗位。
+					========================
+					这是网上随便找的一张鄙视链的图，不管是什么版本，JavaScript 都处于鄙视链偏底部的位置，在这张图里居然跟 PHP 平级了，简直不能忍。当然我也没有期待通过一次分享就咸鱼翻身，而是希望大家能对前端有更多的了解，然后有一个自己的判断。
+					</aside>
+				</section>
+				<section data-background-color="#cc0000">
+					<h3>“最”</h3>
+					<ul>
+						<li>最前沿</li>
+						<li>最真实</li>
+					</ul>
+					<aside class="notes">
+					“最”前端之“最”，是最前沿、最真实的前端。所以今天的演讲会从这两方面来介绍，一是前端业界最前沿的一些技术和应用场景，也就是大家普遍认为很高大上的那些技术，二是回归现实，看看现实生活中前端的工作和涉及的技术有哪些，我之前所在的团队做过哪些事情，现在万达的团队虽然时间很短，还没有什么特别出彩的，但也可以给大家介绍一下我们正在做的事情。今天对具体的技术细节涉及较少，如果对前端技术感兴趣的同学，欢迎参加每周五的内部分享。
+					</aside>
+				</section>
+				<section data-background-color="#251e1e">
+					<h3>最前沿之 WebVR</h3>
+				</section>
+
+				<section data-background-color="#fff000">
+					<h3>WebVR</h3>
+					<div>浏览器提供的 VR 硬件接口，高精度、低延迟。</div>
+					<div>2016年3月1日，Mozilla 和 Google 宣布推出 v1.0。</div>
+
+					<aside class="notes">
+						<div>VR 应用需要高精度、低延迟的接口，才能传递一个可接受的体验。</div>
+						<div>1</div>
+						<div>2</div>
+					</aside>
+				</section>
+
+				<section data-background-color="#3c78d8">
+					<h3>WebVR - 特点</h3>
+					<div class="block-black">跨平台 + 内容分发 + 即来即用</div>
+
+					<aside class="notes">
+						<div>
+							为什么微信要做小程序
+						</div>
+						<div>
+
+						- 跨平台
+							- 以现阶段来看，VR生态依然非常的碎片化：基本上每个VR头盔都拥有单独生态(商店、控制器等)，给用户带来了极大不便。WebVR做了许多工作，来实现跨平台的兼容性。通过求同存异，WebVR能有效地将头盔、内容置于同一生态圈。
+							
+							- WebVR在方便用户使用体验的同时，还能反过来促进VR内容生产商在技术、格式等方面达成统一标准。对开发者而言，WebVR让其作品在移动VR(三星Gear VR、谷歌Daydream View)，以及桌面VR(Windows、Oculus)等更广泛的用户中普及。
+
+						- 内容分发
+							- 说到如何吸引用户进入VR世界，产业的回答是通过VR头盔和应用商店，把VR内容带给用户。但WebVR普及后，我们将看到一种新的可能性：VR头盔成为观看内容的工具，而非用户获取内容的方法。这样的好处也是显而易见的，我们可以在自己习惯和喜欢的网站上获取VR内容，无论这些内容是音乐、视频还是图像。
+
+						- 即来即用
+							- 小程序
+
+							- 伴随着互联网等技术的普及，用户在日常中正越来越远离下载文件，而更倾向于那些可以方便一键观看的内容。WebVR能很好满足用户的这一需求，但并不会取代应用商店，因为一些高质量游戏、长视频仍需下载才能获得最佳体验。
+
+							- WebVR 的魅力就在于，它能够适应并利用现有技术、应用等，为互联网世界创造更多VR内容。事实上，越来越多应用、浏览器支持WebVR后，将推动VR成为一个处于良性发展，有厚实基础的新兴产业。
+							- WebVR 具有跨平台的特性，并且在 VR 内容分发以及直接的使用性上面有足够多的优势。所以当 WebVR 出现时候，就有不少行业人士认为，VR 的真正普及开来可能就需要 WebVR 这样的技术。虽然将全部VR内容搬入到浏览器并不现实，但WebVR仍被认为是VR内容的一个爆发点，因此得到了众多巨头青睐，包括谷歌、三星、Oculus、微软和苹果等。
+						</div>
+					</aside>
+				</section>
+
+				<section data-background-color="#ffffff">
+					<h3>WebVR - API</h3>
+					<ul>
+						<li>getVRDisplays()</li>
+						<li>getEyeParameters</li>
+						<li>VRFrameData</li>
+						<li>...</li>
+					</ul>
+					<aside class="notes">
+						对于不支持 WebVR 或可能具有较旧版本的 API 的浏览器，您可以回退到 WebVR Polyfill。不过，请谨记，VR 对性能极其敏感，并且 polyfill 的性能成本通常相对较高，因此，对于无法为 WebVR 提供原生支持的用户，您需要斟酌是否使用 polyfill。
+						<ul>
+							<li>getVRDisplays() 这个方法将返回一个包含了所有已连接的设备，比如头显设备和位置捕捉传感器。</li>
+							<li>getEyeParameters() 获取左右眼视场信息</li>
+							<li>VRFrameData 这个对象代表位置传感器在指定时刻的状态，包含了一些十分有用的信息，例如速度、加速度以及运动方向，可用于根据头部运动刷新画面显示。</li>
+						</ul>
+					</aside>
+
+				</section>
+				<section data-background-color="#cc0000">
+					<h3>WebVR - 开发</h3>
+					<div class="block-black">WebGL + WebVR + VR Device</div>
+				</section>
+				<section data-background-color="#251e1e">
+					<h3>WebVR - 生态</h3>
+					
+					<ul>
+						<li>A-Frame - Mozilla MozVR</li>
+						<li>React VR - Facebook Oculus</li>
+						<li>HoloJs - Microsoft HoloLens</li>
+					</ul>
+
+					<aside class="notes">
+					- Mozilla MozVR 团队开发的 A-Frame
+						- 声明式标记语言
+						- Three.js
+					- Facebook Oculus 推出的 React VR
+						- 结合 React 和底层 WebVR 及 WebGL API
+						- Three.js
+					- Microsoft 的 HoloLens 开发框架 HoloJs
+						- 基于 Chakra Core
+						- 未来 Edge 浏览器的支持
+					</aside>
+				</section>
+
+				<section data-background-color="#fff000">
+					<h3>WebVR - 体验</h3>
+					game:
+					http://virtualflight.iberia.com/
+					https://mi-g.github.io/jocly/examples/browser/control.html
+					http://www.marciot.com/mazewar-vr/
+					https://konterball.com/
+					
+					https://mrnmnm.com/
+					https://massmigrations.com/dristru
+					https://with.in/#films
+					http://inspirit.unboring.net/
+					http://playing.hypernom.com/compound
+					https://www.clicktorelease.com/code/cruciform/
+					http://vihart.github.io/float/
+					http://playing.hypernom.com/
+					http://virtualflight.iberia.com/
+					http://media.tojicode.com/q3bsp/
+					http://playing.hypernom.com/spindex
+					https://webvr-experiments.herokuapp.com/suspended-cuboids.html
+					http://hawksley.github.io/VR-World-Nav/
+					http://cabbi.bo/pulse/#VR
+					http://vr.chromeexperiments.com/
+				</section>
+
+				<section data-background-color="#3c78d8">
+					<h3>最前沿之 可视化</h3>
+
+					<aside class="notes">
+					数据可视化过滤了非常多的冗余信息，浓缩了最重要的信息，它的魅力就在于将枯燥的数据组织在一起，把最需要的那些编辑成一个故事。目前大数据那么流行，需要整合的数据，恰当的将客户最关注的数据挖掘展示出来才是最重要的。
+					</aside>
+				</section>
+
+				<section data-background-color="#cc0000">
+					<img src="./images/big-screen1.jpg" />
+				</section>
+
+				<section data-background-color="#ffffff">
+					<div>领导爱大屏</div>
+					<img class="img-no-border" src="./images/big-screen2.png" />
+				</section>
+
+				<section data-background-color="#cc0000">
+					<h3>可视化 - 大屏</h3>
+					<div class="block-black">
+						超大的渲染区域 + 超实时的数据更新 + 超长的停留时间
+					</div>
+				</section>
+
+				<section data-background-color="#251e1e">
+					<h3>可视化 - 大屏</h3>
+					<div>DataV 像做 PPT 一样做大屏</div>
+					<img class="img-no-border" src="./images/datav.gif" />
+				</section>
+
+				<section data-background-color="#3c78d8">
+					<h3>可视化 - 大屏</h3>
+					<div>DataV 生成各式各样的大屏</div>
+					<img class="img-no-border" style="height:400px;" src="./images/datav1.png" />
+				</section>
+
+				<section data-background-color="#fff000">
+					<h3>还有...</h3>
+				</section>
+
+				<section data-background-color="#3c78d8">
+					<h3>还有...</h3>
+					<div>客户端 (微信, 网易云音乐)</div>
+					<div class="fragment">IDE (VSCode, Atom)</div>
+					<div class="fragment">区块链 Bitcore</div>
+					<div class="fragment">物联网 Johnny-Five</div>
+					<div class="fragment">嵌入式 Ruff </div>
+					<div class="fragment">硬件开发 (Cylon, Nodebots, Robotjs)</div>
+					<aside class="notes">
+					微信的本质是网页，Bitcore使用Javascript发送数据到区块链
+					</aside>
+				</section>
+
+				<section data-background-color="#ffffff">
+					<h3>Atwood's Law</h3>
+					<div class="block-black">
+					"Any application that can be written in JavaScript, will eventually be written in JavaScript." -- Jeff Atwood
+					</div>
+					<div class="block-black">
+					“任何可以用 JavaScript 来写的应用，最终都会用 JavaScript 来实现。”
+					</div>
+				</section>
+
+				<section data-background-color="#cc0000">
+					<h3>前端摩尔定律</h3>
+					<div class="block-black">
+					“每隔18个月，前端开发的难度难度会增加一倍。”
+					</div>
+				</section>
+
+				<section data-background-color="#251e1e">
+					<h3>工具链和生态环境巨变</h3>
+					<ul>
+						<li>2015 → 2017</li>
+						<li>主流框架：jQuery → React、Vue</li>
+						<li>构建打包：gulp → webpack</li>
+						<li>模块仓库：无 → npm</li>
+						<li>Nodejs：v0.11.15 → v8.2.1</li>
+						<li>语言规范：ES5 → ES8</li>
+					</ul>
+				</section>
+
+				<section data-background-color="#ffffff">
+					<h3>Github 占比 (2016年)</h3>
+					<img class="img-no-border" height="400" src="./images/classify_by_language.png" />
+				</section>
+
+				<section data-background-color="#3c78d8">
+					<h3>npm 模块</h3>
+					<div class="section-content">npm 已经成为世界上最大的模块仓库，模块数量是 Maven 仓库的 2 倍</div>
+					<div class="section-content">从2017年1月到2017年7月，模块数量从 35 万+增长到 47 万+</div>
+				</section>
+
+				<section data-background-color="#fff000">
+					<h3>JavaScript 语言</h3>
+					<pre><code>/* 曾经的 class */
+function Human(age) {
+  this.age = age;
+}
+Human.prototype.speak = function(sentence) {
+  console.log(sentence);
+};
+
+var wang = new Human(18);
+wang.speak('I am ' + wang.age + ' years old');
+// output: I am 18 years old
+</code></pre>
+				</section>
+
+				<section data-background-color="#cc0000">
+					<h3>JavaScript 语言</h3>
+					<pre><code>/* 现在的 class */
+class Human {
+  constructor(age) {
+    this.age = age;
+  }
+  speak(sentence) {
+    console.log(sentence);
+  }
+}
+
+let wang = new Human(18);
+wang.speak(`I am ${wang.age} years old`);
+// output: I am 18 years old
+</code></pre>
+				</section>
+
+				<section data-background-color="#251e1e">
+					<h3>JavaScript 语言</h3>
+					
+					<pre><code><div>
+  <button id="btn">show</button>
+  <div id="dialog" style="display:none;">Hello JavaScript</div>
+</div>
+</code></pre>
+
+					<pre><code>/* Dom 操作 */
+$('#btn').on('click', function() {
+  $('#btn').addClass('clicked');
+  $('#dialog').show();
+});
+</code></pre>
+				</section>
+
+				<section data-background-color="#fff000">
+					<h3>JavaScript 语言</h3>
+					
+					<pre><code>/* Dom 操作 */
+import React from 'react';
+
+class Demo extends React.Component {
+  handleBtnClicked = () => {
+    this.setState({
+      isClicked: true
+    });
+  }
+
+  render() {
+    return <div>
+      <button onClick={this.handleBtnClicked}>show</button>
+      {isClicked && <div>Hello JavaScript</div>}
+    </div>
+  }
+}
+</code></pre>
+				</section>
+
+				<section data-background-color="#3c78d8">
+					<h3>最真实的前端什么样</h3>
+				</section>
+				
+
+				<section data-background-color="#3c78d8">
+					<h3>买家秀</h3>
+				</section>
+				
+				<section data-background-color="#ffffff">
+					<h3>两类需求场景</h3>
+					<div>注重体验</div>
+					<div>注重功能</div>
+				</section>
+
+				<section data-background-color="#cc0000">
+					<h3>注重体验</h3>
+					<div>对视觉设计敏感</div>
+					<div>对站点性能敏感</div>
+					<div>对站点稳定性要求高</div>
+				</section>
+
+				<section data-background-color="#251e1e">
+					<h3>注重功能</h3>
+					<div>对视觉设计容忍度高</div>
+					<div>对站点性能容忍度高</div>
+					<div>需求模型复杂</div>
+					<div>对前端工程化要求高</div>
+					<div>要求快速开发、快速迭代</div>
+					<aside class="notes">优先级、有限资源</aside>
+				</section>
+
+				<section data-background-color="#fff000">
+					<h3>注重体验 - 性能优化</h3>
+					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+					<div class="fragment" style="position:absolute; font-size:60px; left: 260px; top:300px;">减少请求数</div>
+					<div class="fragment" style="position:absolute; font-size:40px; left: 130px; top:300px;">雪碧图</div>
+					<div class="fragment" style="position:absolute; font-size:50px; left: 110px; top:370px;">Iconfont</div>
+					<div class="fragment" style="position:absolute; font-size:40px; left: 320px; top:380px;">JS、CSS 合并</div>
+					<div class="fragment" style="position:absolute; font-size:50px; left: 580px; top:250px;">资源压缩</div>
+					<div class="fragment" style="position:absolute; font-size:35px; left: 720px; top:200px;">图片压缩</div>
+					<div class="fragment" style="position:absolute; font-size:27px; left: 600px; top:320px;">HTML、JS、CSS 压缩</div>
+					<div class="fragment" style="position:absolute; font-size:35px; left: 810px; top:260px;">Gzip</div>
+					<div class="fragment" style="position:absolute; font-size:50px; left: 70px; top:210px;">懒加载</div>
+					<div class="fragment" style="position:absolute; font-size:55px; left: 90px; top:440px;">CDN 加速</div>
+					<div class="fragment" style="position:absolute; font-size:45px; left: 280px; top:220px;">浏览器缓存</div>
+					<div class="fragment" style="position:absolute; font-size:40px; left: 590px; top:450px;">分域名并发请求</div>
+					<div class="fragment" style="position:absolute; font-size:30px; left: 390px; top:460px;">图片 Webp</div>
+					<div class="fragment" style="position:absolute; font-size:35px; left: 570px; top:390px;">限制 Cookie 大小</div>
+				</section>
+
+				<section data-background-color="#fff000">
+					<div>有了以上方案，你的页面性能将超过 90% 的网站</div>
+				</section>
+
+				<section data-background-color="#3c78d8">
+					<div>但是，我们要做 1%</div>
+				</section>
+
+				<section data-background-color="#ffffff">
+					<h3>注重体验 - 性能优化</h3>
+					<div class="fragment">DNS 预解析 </div>
+					<div class="fragment">Prefetch 预加载</div>
+					<div class="fragment">Prerender 预渲染</div>
+					<div class="fragment">减少重定向</div>
+					<div class="fragment">分屏异步化 </div>
+					<div class="fragment">Ajax SEO</div>
+					<div class="fragment">ESI & 静态化 </div>
+					<div class="fragment">Page Timing & 监控</div>
+				</section>
+				
+				<section data-background-color="#251e1e">
+					<h3>两类需求场景</h3>
+					<div>注重体验</div>
+					<div style="color: #3c78d8">注重功能</div>
+				</section>
+
+				<section data-background-color="#cc0000">Slide 9</section>
+
+				<section data-background-color="#fff000">Slide 5</section>
+				<section data-background-color="#3c78d8">Slide 6</section>
+				<section data-background-color="#ffffff">Slide 7</section>
+				<section data-background-color="#cc0000">Slide 8</section>
+				<section data-background-color="#251e1e">Slide 9</section>
+			</div>
+		</div>
+
+		<script src="../reveal.js/lib/js/head.min.js"></script>
+		<script src="../reveal.js/js/reveal.js"></script>
+
+
+		<script src="lib/js/three.min.js"></script>
+		<script src="lib/js/webvr-polyfill.js"></script>
+		<script src="lib/js/VRControls.js"></script>
+		<script src="lib/js/VREffect.js"></script>
+		<script src="lib/js/webvr-manager.js"></script>
+		<script src="vr/index.js"></script>
+		<script src="vr/ImageBitmapLoader.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+
+			var whoAmI = 'client';
+			var whoAmIDep = '../reveal.js/plugin/multiplex/client.js';
+			var configControls = false;
+			var configShowNotes = false;
+
+			if (location.search === '?master') {
+				whoAmI = 'master';
+				whoAmIDep = '../reveal.js/plugin/multiplex/master.js';
+				configControls = true;
+				configShowNotes = false;
+			} else if(location.search == '?controller') {
+				whoAmI = 'controller';
+				whoAmIDep = '../reveal.js/plugin/multiplex/master.js';
+				configControls = true;
+				configShowNotes = true;
+			}
+
+			Reveal.initialize({
+        history: true,
+				controls: configControls,
+				showNotes: configShowNotes,
+				backgroundTransition: 'slide',
+
+				multiplex: {
+					// Example values. To generate your own, see the socket.io server instructions.
+					secret: '1501554345381838675', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+					id: 'c46b988a19f574f0', // Obtained from socket.io server
+					url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+				},
+				dependencies: [
+					{ src: 'lib/js/socket.io-1.3.5.js', async: true },
+					{ src: whoAmIDep, async: true },
+					{ src: '../reveal.js/plugin/markdown/marked.js' },
+					{ src: '../reveal.js/plugin/markdown/markdown.js' },
+					{ src: '../reveal.js/plugin/notes/notes.js', async: true },
+					{ 
+						src: '../reveal.js/plugin/highlight/highlight.js', 
+						async: true, 
+						callback: function() { hljs.initHighlightingOnLoad(); } 
+					}
+				]
+			});
+			if (location.search === '?vr') {
+				Reveal.addEventListener('slidechanged', function( event ) {
+					// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+					console.log(event.currentSlide, event.indexh);
+					// vrSlides.slide(event.indexh, event.currentSlide);
+				});
+				var vrSlides = new VRSlides();
+				vrSlides.init();
+			}
+		</script>
+	</body>
+</html>
