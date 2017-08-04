@@ -9,20 +9,30 @@ VRSlides.prototype = {
 
 		// 初始化相机
 		this.camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 1500 );
-		this.camera.position.set( 0, 0, 800 );
-		this.cameraTarget = new THREE.Vector3( 0, 150, 0 );
+		this.camera.position.set( 0, 100, 200 );
+		// this.cameraTarget = new THREE.Vector3( 0, 150, 0 );
 		this.scene.add(this.camera);
 
 		// 创建光源
 		var pointLight = new THREE.PointLight( 0xffffff, 1.5 );
-		pointLight.position.set( 0, -200, 200 );
-		pointLight.color.setHex( 0xd0d0d0 );
+		pointLight.position.set( 0, 100, 200 );
+		pointLight.color.setHex( 0xffffff );
 		this.scene.add( pointLight );
+
+		// 创建地面
+		var gg = new THREE.PlaneBufferGeometry( 2000, 2000 );
+		var gm = new THREE.MeshPhongMaterial( { color: 0xfff000 } );
+		this.ground = new THREE.Mesh( gg, gm );
+		this.ground.rotation.x = - Math.PI / 2;
+		this.ground.receiveShadow = true;
+		this.scene.add( this.ground );
+		console.log(this.ground.position)
+		console.log(this.ground.rotation)
 
 		// 初始化渲染器
 		this.renderer = new THREE.WebGLRenderer({ antialias: true } );
 		this.renderer.setSize(window.innerWidth,window.innerHeight);
-		this.renderer.setClearColor(0x000000);
+		this.renderer.setClearColor(0x519EcB);
 		this.renderer.shadowMapEnabled = true;
 		this.renderer.setPixelRatio(window.devicePixelRatio);
 		document.querySelector('.vr-slides').appendChild(this.renderer.domElement);
@@ -32,7 +42,7 @@ VRSlides.prototype = {
 		// 创建 slide 图层
 		this.addTitle('Hello World');
 		this.addContent('This is content, This is content');
-		this.addImage('images/qr_code.png');
+		this.addImage('images/ground.jpg');
 
 		// 事件绑定
 		this.bindEvent();
@@ -56,7 +66,7 @@ VRSlides.prototype = {
 				font: font,
 				size: 30, // 文字高度
 				height: 10, // 文字厚度
-				curveSegments: 20, // 分辨率 
+				curveSegments: 2, // 分辨率 
 
 				bevelThickness: 0.5,
 				bevelSize: 1.5, 
@@ -76,7 +86,7 @@ VRSlides.prototype = {
 			var mesh = new THREE.Mesh( geometry, materials );
 			// mesh.position.set(centerOffset, 530, -80);
 			// mesh.position.set(centerOffset, 120, -80);
-			mesh.position.set(centerOffset, 150, -80);
+			mesh.position.set(centerOffset, 150, -300);
 			self.scene.add(mesh);
 		});
 
@@ -91,7 +101,7 @@ VRSlides.prototype = {
 				font: font,
 				size: 20, // 文字高度
 				height: 5, // 文字厚度
-				curveSegments: 20, // 分辨率 
+				curveSegments: 2, // 分辨率 
 
 				bevelThickness: 0.5,
 				bevelSize: 1.5, 
@@ -109,7 +119,7 @@ VRSlides.prototype = {
 				new THREE.MeshPhongMaterial( { color: 0xffffff, shading: THREE.SmoothShading } ) // side
 			];
 			var mesh = new THREE.Mesh( geometry, materials );
-			mesh.position.set(centerOffset, 100, -80);
+			mesh.position.set(centerOffset, 100, -300);
 			self.scene.add(mesh);
 		});
 	},
@@ -123,7 +133,7 @@ VRSlides.prototype = {
 
 			var geometry = new THREE.BoxBufferGeometry( 100,100,100 );
 			var cube = new THREE.Mesh( geometry, material );
-			cube.position.set(0, 0, -80);
+			cube.position.set(0, 0, -300);
 			self.scene.add( cube );
 		});
 	},
@@ -166,20 +176,10 @@ VRSlides.prototype = {
 		light.shadow.camera.bottom = -350;
 		this.scene.add( light );
 	},
-	createGround: function(width,height) {
-		// 创建地平面
-		this.gg = new THREE.PlaneBufferGeometry( width, height );
-		var gm = new THREE.MeshPhongMaterial( { color: 0xaaaaaa } );
-		this.ground = new THREE.Mesh( this.gg, gm );
-		this.ground.rotation.x = - Math.PI / 2;
-		this.ground.position.y = -10;
-		this.ground.receiveShadow = true;
-		this.scene.add( this.ground );
-	},
 	render: function() {
 		// 启动渲染
 		var self = this;
-		this.camera.lookAt(this.cameraTarget);
+		// this.camera.lookAt(this.cameraTarget);
 		var render = function() {
 			self.controls.update();
 			self.manager.render(self.scene, self.camera);

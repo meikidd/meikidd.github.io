@@ -167,6 +167,9 @@
 
 				<section data-background-color="#fff000">
 					<h3>WebVR - 体验</h3>
+					https://aframe.io/a-painter/
+					https://github.com/aframevr/a-painter/issues/99
+
 					game:
 					http://virtualflight.iberia.com/
 					https://mi-g.github.io/jocly/examples/browser/control.html
@@ -453,7 +456,8 @@ class Demo extends React.Component {
 		<script src="lib/js/VRControls.js"></script>
 		<script src="lib/js/VREffect.js"></script>
 		<script src="lib/js/webvr-manager.js"></script>
-		<script src="vr/index.js"></script>
+		<!--<script src="vr/index.js"></script>-->
+		<script src="vr/index1.js"></script>
 		<script src="vr/ImageBitmapLoader.js"></script>
 
 		<script>
@@ -511,7 +515,17 @@ class Demo extends React.Component {
 				});
 				var vrSlides = new VRSlides();
 				vrSlides.init();
+
+				window.addEventListener('keyup', function(event) {
+					if (event.keyCode === 13) {
+						vrSlides.next();
+					}
+				});
+				window.addEventListener('click', function(event) {
+						vrSlides.next();
+				});
 			}
+
 		</script>
 	</body>
 </html>
