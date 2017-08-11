@@ -44,3 +44,9 @@
   border-radius: 15px;
 }
 
+#vr-button {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: 100;
+}

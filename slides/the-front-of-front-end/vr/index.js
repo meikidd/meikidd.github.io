@@ -37,6 +37,8 @@ VRSlides.prototype = {
 		this.renderer.setPixelRatio(window.devicePixelRatio);
 		document.querySelector('.vr-slides').appendChild(this.renderer.domElement);
 
+
+
 		// 初始化VR视觉控件
 		this.initVR();
 		// 创建 slide 图层

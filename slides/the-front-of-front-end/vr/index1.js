@@ -79,18 +79,23 @@ VRSlides.prototype = {
 		// 初始化渲染器
 		this.renderer = new THREE.WebGLRenderer({ antialias: true } );
 		this.renderer.setSize(window.innerWidth,window.innerHeight);
-		// this.renderer.setClearColor(0x519EcB);
+		this.renderer.setClearColor(0x519EcB);
 		this.renderer.setClearColor(0x000000);
 		this.renderer.shadowMapEnabled = true;
 		this.renderer.setPixelRatio(window.devicePixelRatio);
 		document.querySelector('.vr-slides').appendChild(this.renderer.domElement);
 
+		// Initialize the WebVR UI.
+		// var uiOptions = {
+		// 	color: 'black',
+		// 	background: 'white',
+		// 	corners: 'square'
+		// };
+		// var vrButton = new webvrui.EnterVRButton(this.renderer.domElement, uiOptions);
+		// document.getElementById('vr-button').appendChild(vrButton.domElement);
+
 		// 初始化VR视觉控件
 		this.initVR();
-
-		// this.addTitle('Hello World');
-		// this.addContent('This is Content');
-		// this.addImage('images/qr-code.png');
 
 		// 事件绑定
 		this.bindEvent();
@@ -221,6 +226,7 @@ VRSlides.prototype = {
       // self.pointLight.position.y -= 0.1;
 			self.controls.update();
 			self.manager.render(self.scene, self.camera);
+			// self.effect.render(self.scene, self.camera);
 			requestAnimationFrame(render);
 		}
 		render();

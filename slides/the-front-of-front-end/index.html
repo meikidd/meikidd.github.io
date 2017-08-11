@@ -12,7 +12,6 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
-
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -23,6 +22,7 @@
 		</script>
 	</head>
 	<body>
+		<div id="vr-button"></div>
 		<div class="vr-slides"></div>
 		<div class="reveal">
 			<div class="slides">
@@ -452,10 +452,11 @@ class Demo extends React.Component {
 
 
 		<script src="lib/js/three.min.js"></script>
-		<script src="lib/js/webvr-polyfill.js"></script>
 		<script src="lib/js/VRControls.js"></script>
 		<script src="lib/js/VREffect.js"></script>
+		<script src="lib/js/webvr-polyfill.js"></script>
 		<script src="lib/js/webvr-manager.js"></script>
+		<!--<script src="lib/js/webvr-ui.min.js"></script>-->
 		<!--<script src="vr/index.js"></script>-->
 		<script src="vr/index1.js"></script>
 		<script src="vr/ImageBitmapLoader.js"></script>
@@ -524,6 +525,16 @@ class Demo extends React.Component {
 				window.addEventListener('click', function(event) {
 						vrSlides.next();
 				});
+
+
+				// Initialize the WebVR UI.
+				// var uiOptions = {
+				// 	color: 'black',
+				// 	background: 'white',
+				// 	corners: 'square'
+				// };
+				// vrButton = new webvrui.EnterVRButton(vrSlides.renderer.domElement, uiOptions);
+				// document.getElementById('vr-button').appendChild(vrButton.domElement);
 			}
 
 			function launchFullscreen(element) {
@@ -537,10 +548,10 @@ class Demo extends React.Component {
 					element.webkitRequestFullScreen();
 				}
 			}
-			var vrBtn = document.querySelector('img[draggable=false]');
-			vrBtn.addEventListener('click', function() {
-				launchFullscreen(vrBtn);
-			});
+			// var vrBtn = document.querySelector('img[draggable=false]');
+			// vrBtn.addEventListener('click', function() {
+			// 	launchFullscreen(vrBtn);
+			// });
 		</script>
 	</body>
 </html>
