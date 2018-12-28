@@ -1,0 +1,950 @@
+[
+    {
+        "startTime": "00:00:00,000",
+        "endTime": "00:00:00,196",
+        "content": []
+    },
+    {
+        "startTime": "00:00:00,196",
+        "endTime": "00:00:01,820",
+        "content": [
+            "PAUL LEWIS: Today",
+            "I've had a little bit"
+        ]
+    },
+    {
+        "startTime": "00:00:01,820",
+        "endTime": "00:00:05,800",
+        "content": [
+            "of a play with the images",
+            "for the Chrome Dev Summit"
+        ]
+    },
+    {
+        "startTime": "00:00:05,800",
+        "endTime": "00:00:07,110",
+        "content": [
+            "site-- the mastered images."
+        ]
+    },
+    {
+        "startTime": "00:00:07,110",
+        "endTime": "00:00:10,005",
+        "content": [
+            "If you look at what",
+            "I've got on screen,"
+        ]
+    },
+    {
+        "startTime": "00:00:10,005",
+        "endTime": "00:00:12,363",
+        "content": [
+            "these masthead",
+            "images have the kind"
+        ]
+    },
+    {
+        "startTime": "00:00:12,363",
+        "endTime": "00:00:15,350",
+        "content": [
+            "of angular cutoff at the bottom."
+        ]
+    },
+    {
+        "startTime": "00:00:15,350",
+        "endTime": "00:00:16,600",
+        "content": [
+            "And I was thinking about this."
+        ]
+    },
+    {
+        "startTime": "00:00:16,600",
+        "endTime": "00:00:18,680",
+        "content": [
+            "There's kind of a couple",
+            "of ways you could do it."
+        ]
+    },
+    {
+        "startTime": "00:00:18,680",
+        "endTime": "00:00:21,900",
+        "content": [
+            "One would be, you actually just",
+            "have the image as a rectangle,"
+        ]
+    },
+    {
+        "startTime": "00:00:21,900",
+        "endTime": "00:00:24,670",
+        "content": [
+            "and then you kind of overlay",
+            "something on the top,"
+        ]
+    },
+    {
+        "startTime": "00:00:24,670",
+        "endTime": "00:00:25,610",
+        "content": [
+            "like a triangle."
+        ]
+    },
+    {
+        "startTime": "00:00:25,610",
+        "endTime": "00:00:27,990",
+        "content": [
+            "Like, say, using",
+            "SVG or something."
+        ]
+    },
+    {
+        "startTime": "00:00:27,990",
+        "endTime": "00:00:31,850",
+        "content": [
+            "And that's actually what I",
+            "did in the holding page--"
+        ]
+    },
+    {
+        "startTime": "00:00:31,850",
+        "endTime": "00:00:35,762",
+        "content": [
+            "the announcement page here."
+        ]
+    },
+    {
+        "startTime": "00:00:35,762",
+        "endTime": "00:00:37,970",
+        "content": [
+            "This has a slight angle on",
+            "it, which you can probably"
+        ]
+    },
+    {
+        "startTime": "00:00:37,970",
+        "endTime": "00:00:40,210",
+        "content": [
+            "see if I make it a bit smaller."
+        ]
+    },
+    {
+        "startTime": "00:00:40,210",
+        "endTime": "00:00:42,830",
+        "content": [
+            "It has a slight",
+            "angle on it upwards."
+        ]
+    },
+    {
+        "startTime": "00:00:42,830",
+        "endTime": "00:00:44,900",
+        "content": [
+            "But the thing is, when",
+            "you've got that triangle,"
+        ]
+    },
+    {
+        "startTime": "00:00:44,900",
+        "endTime": "00:00:50,020",
+        "content": [
+            "when it butts up to the",
+            "white rectangle above it"
+        ]
+    },
+    {
+        "startTime": "00:00:50,020",
+        "endTime": "00:00:53,710",
+        "content": [
+            "in this case, sometimes",
+            "there's a hairline crack."
+        ]
+    },
+    {
+        "startTime": "00:00:53,710",
+        "endTime": "00:00:55,860",
+        "content": [
+            "And I filed a bug",
+            "against Chrome saying,"
+        ]
+    },
+    {
+        "startTime": "00:00:55,860",
+        "endTime": "00:00:59,445",
+        "content": [
+            "there's a hairline crack on",
+            "phones because, I assume,"
+        ]
+    },
+    {
+        "startTime": "00:00:59,445",
+        "endTime": "00:01:01,160",
+        "content": [
+            "it's some kind of",
+            "rounding issue to do"
+        ]
+    },
+    {
+        "startTime": "00:01:01,160",
+        "endTime": "00:01:03,660",
+        "content": [
+            "with not exactly lining up."
+        ]
+    },
+    {
+        "startTime": "00:01:03,660",
+        "endTime": "00:01:06,273",
+        "content": [
+            "Anyway, so I was like, OK, I",
+            "need to find a different way."
+        ]
+    },
+    {
+        "startTime": "00:01:06,273",
+        "endTime": "00:01:09,460",
+        "content": [
+            "And I've been messing",
+            "around with SVG."
+        ]
+    },
+    {
+        "startTime": "00:01:09,460",
+        "endTime": "00:01:13,932",
+        "content": [
+            "And it's one of these things",
+            "that I could not get it right."
+        ]
+    },
+    {
+        "startTime": "00:01:13,932",
+        "endTime": "00:01:15,390",
+        "content": [
+            "Here's what I",
+            "actually have, right?"
+        ]
+    },
+    {
+        "startTime": "00:01:15,390",
+        "endTime": "00:01:17,170",
+        "content": [
+            "So, I've got the image."
+        ]
+    },
+    {
+        "startTime": "00:01:17,170",
+        "endTime": "00:01:20,919",
+        "content": [
+            "And, see, that kind",
+            "of roughly works."
+        ]
+    },
+    {
+        "startTime": "00:01:20,919",
+        "endTime": "00:01:22,710",
+        "content": [
+            "If you look at it--",
+            "actually, let me switch"
+        ]
+    },
+    {
+        "startTime": "00:01:22,710",
+        "endTime": "00:01:28,670",
+        "content": [
+            "across to VS code, right."
+        ]
+    },
+    {
+        "startTime": "00:01:28,670",
+        "endTime": "00:01:32,474",
+        "content": [
+            "What we've got is there's",
+            "an image which is a pattern."
+        ]
+    },
+    {
+        "startTime": "00:01:32,474",
+        "endTime": "00:01:36,830",
+        "content": [
+            "So, there's a",
+            "rectangle here which"
+        ]
+    },
+    {
+        "startTime": "00:01:36,830",
+        "endTime": "00:01:38,250",
+        "content": [
+            "uses the image as a pattern."
+        ]
+    },
+    {
+        "startTime": "00:01:38,250",
+        "endTime": "00:01:40,770",
+        "content": []
+    },
+    {
+        "startTime": "00:01:40,770",
+        "endTime": "00:01:43,616",
+        "content": [
+            "And it could have been-- I could",
+            "have used an image element,"
+        ]
+    },
+    {
+        "startTime": "00:01:43,616",
+        "endTime": "00:01:44,990",
+        "content": [
+            "actually, a square",
+            "image element."
+        ]
+    },
+    {
+        "startTime": "00:01:44,990",
+        "endTime": "00:01:48,000",
+        "content": [
+            "Because this was kind",
+            "of where I got to."
+        ]
+    },
+    {
+        "startTime": "00:01:48,000",
+        "endTime": "00:01:51,780",
+        "content": [
+            "And then there's a",
+            "clip-path of this clip."
+        ]
+    },
+    {
+        "startTime": "00:01:51,780",
+        "endTime": "00:01:55,030",
+        "content": [
+            "And the clip is-- it's a",
+            "rectangle with a triangular"
+        ]
+    },
+    {
+        "startTime": "00:01:55,030",
+        "endTime": "00:01:59,750",
+        "content": [
+            "bit at the bottom because",
+            "of the view box that's set."
+        ]
+    },
+    {
+        "startTime": "00:01:59,750",
+        "endTime": "00:02:01,980",
+        "content": [
+            "It's all kind of kept",
+            "broadly in proportion."
+        ]
+    },
+    {
+        "startTime": "00:02:01,980",
+        "endTime": "00:02:04,030",
+        "content": [
+            "I don't mind the",
+            "angle of the triangle"
+        ]
+    },
+    {
+        "startTime": "00:02:04,030",
+        "endTime": "00:02:05,820",
+        "content": [
+            "kind of squishing in and out."
+        ]
+    },
+    {
+        "startTime": "00:02:05,820",
+        "endTime": "00:02:09,440",
+        "content": [
+            "It just has to look OK-ish",
+            "for the screen size it's on."
+        ]
+    },
+    {
+        "startTime": "00:02:09,440",
+        "endTime": "00:02:13,660",
+        "content": [
+            "The problem is the",
+            "effect isn't what I want,"
+        ]
+    },
+    {
+        "startTime": "00:02:13,660",
+        "endTime": "00:02:17,220",
+        "content": [
+            "because the image is kind of",
+            "getting smaller and shrinking"
+        ]
+    },
+    {
+        "startTime": "00:02:17,220",
+        "endTime": "00:02:18,140",
+        "content": [
+            "to the bottom."
+        ]
+    },
+    {
+        "startTime": "00:02:18,140",
+        "endTime": "00:02:21,740",
+        "content": [
+            "And that's because",
+            "it's xMid yMax"
+        ]
+    },
+    {
+        "startTime": "00:02:21,740",
+        "endTime": "00:02:26,440",
+        "content": [
+            "on the preserve aspect ratio."
+        ]
+    },
+    {
+        "startTime": "00:02:26,440",
+        "endTime": "00:02:27,970",
+        "content": [
+            "So I was like, OK."
+        ]
+    },
+    {
+        "startTime": "00:02:27,970",
+        "endTime": "00:02:30,850",
+        "content": [
+            "Why don't we do preserve",
+            "aspect ratio none."
+        ]
+    },
+    {
+        "startTime": "00:02:30,850",
+        "endTime": "00:02:35,070",
+        "content": [
+            "But then you get that,",
+            "which is like, yeah."
+        ]
+    },
+    {
+        "startTime": "00:02:35,070",
+        "endTime": "00:02:37,130",
+        "content": [
+            "Now the clip is kind of",
+            "doing what I want, right?"
+        ]
+    },
+    {
+        "startTime": "00:02:37,130",
+        "endTime": "00:02:39,532",
+        "content": [
+            "It's always clipping there,",
+            "but obviously, the photo"
+        ]
+    },
+    {
+        "startTime": "00:02:39,532",
+        "endTime": "00:02:40,560",
+        "content": [
+            "is getting squashed."
+        ]
+    },
+    {
+        "startTime": "00:02:40,560",
+        "endTime": "00:02:43,690",
+        "content": []
+    },
+    {
+        "startTime": "00:02:43,690",
+        "endTime": "00:02:47,790",
+        "content": [
+            "And it's also the",
+            "case that if I do"
+        ]
+    },
+    {
+        "startTime": "00:02:47,790",
+        "endTime": "00:02:50,747",
+        "content": [
+            "xMid yMid, which is kind of",
+            "what I want from the photo."
+        ]
+    },
+    {
+        "startTime": "00:02:50,747",
+        "endTime": "00:02:53,691",
+        "content": []
+    },
+    {
+        "startTime": "00:02:53,691",
+        "endTime": "00:02:56,190",
+        "content": [
+            "As in, I want the photo to--",
+            "when the screen is really wide,"
+        ]
+    },
+    {
+        "startTime": "00:02:56,190",
+        "endTime": "00:02:58,810",
+        "content": [
+            "and you can't",
+            "really see it here."
+        ]
+    },
+    {
+        "startTime": "00:02:58,810",
+        "endTime": "00:03:04,550",
+        "content": [
+            "If I zoom out, it",
+            "doesn't spread."
+        ]
+    },
+    {
+        "startTime": "00:03:04,550",
+        "endTime": "00:03:07,400",
+        "content": [
+            "Whereas with the-- anyway."
+        ]
+    },
+    {
+        "startTime": "00:03:07,400",
+        "endTime": "00:03:09,750",
+        "content": [
+            "This isn't working",
+            "for me, right?"
+        ]
+    },
+    {
+        "startTime": "00:03:09,750",
+        "endTime": "00:03:13,960",
+        "content": [
+            "But Chris Coyier--",
+            "thanks, Chris,"
+        ]
+    },
+    {
+        "startTime": "00:03:13,960",
+        "endTime": "00:03:17,410",
+        "content": [
+            "yes-- has a post on",
+            "CSS tricks, which--"
+        ]
+    },
+    {
+        "startTime": "00:03:17,410",
+        "endTime": "00:03:21,480",
+        "content": [
+            "I guess we'll make sure it goes",
+            "into the description-- which"
+        ]
+    },
+    {
+        "startTime": "00:03:21,480",
+        "endTime": "00:03:27,910",
+        "content": [
+            "talks about using SVG as a clip",
+            "for non-SVG content, which is"
+        ]
+    },
+    {
+        "startTime": "00:03:27,910",
+        "endTime": "00:03:29,410",
+        "content": [
+            "pretty much what I've got here."
+        ]
+    },
+    {
+        "startTime": "00:03:29,410",
+        "endTime": "00:03:35,930",
+        "content": [
+            "And, in fact, that's what I've",
+            "gone ahead and done over here"
+        ]
+    },
+    {
+        "startTime": "00:03:35,930",
+        "endTime": "00:03:38,170",
+        "content": [
+            "in index page."
+        ]
+    },
+    {
+        "startTime": "00:03:38,170",
+        "endTime": "00:03:40,340",
+        "content": [
+            "Now, you can see",
+            "I've got the image"
+        ]
+    },
+    {
+        "startTime": "00:03:40,340",
+        "endTime": "00:03:42,920",
+        "content": [
+            "doing what the image does."
+        ]
+    },
+    {
+        "startTime": "00:03:42,920",
+        "endTime": "00:03:46,240",
+        "content": [
+            "And that's just basically-- it's",
+            "just a div with the background"
+        ]
+    },
+    {
+        "startTime": "00:03:46,240",
+        "endTime": "00:03:47,990",
+        "content": [
+            "and it's set to",
+            "background size cover."
+        ]
+    },
+    {
+        "startTime": "00:03:47,990",
+        "endTime": "00:03:51,740",
+        "content": [
+            "And if I don't have",
+            "the clip on it--"
+        ]
+    },
+    {
+        "startTime": "00:03:51,740",
+        "endTime": "00:03:54,120",
+        "content": [
+            "if you don't have",
+            "the clip on it,"
+        ]
+    },
+    {
+        "startTime": "00:03:54,120",
+        "endTime": "00:03:55,787",
+        "content": [
+            "you can see it just--",
+            "that pretty much"
+        ]
+    },
+    {
+        "startTime": "00:03:55,787",
+        "endTime": "00:03:56,870",
+        "content": [
+            "does what I want it to do."
+        ]
+    },
+    {
+        "startTime": "00:03:56,870",
+        "endTime": "00:04:00,419",
+        "content": [
+            "And then, I can use media",
+            "queries to make sure that if I"
+        ]
+    },
+    {
+        "startTime": "00:04:00,419",
+        "endTime": "00:04:01,710",
+        "content": [
+            "need a smaller image, whatever."
+        ]
+    },
+    {
+        "startTime": "00:04:01,710",
+        "endTime": "00:04:05,670",
+        "content": [
+            "But, I switch on the clip-path."
+        ]
+    },
+    {
+        "startTime": "00:04:05,670",
+        "endTime": "00:04:09,200",
+        "content": [
+            "And the clip-path is",
+            "just basically this SVG"
+        ]
+    },
+    {
+        "startTime": "00:04:09,200",
+        "endTime": "00:04:12,560",
+        "content": [
+            "with a clip-path that's defined",
+            "by the object's bounding box."
+        ]
+    },
+    {
+        "startTime": "00:04:12,560",
+        "endTime": "00:04:16,279",
+        "content": [
+            "So it just basically maps",
+            "to a normalized version"
+        ]
+    },
+    {
+        "startTime": "00:04:16,279",
+        "endTime": "00:04:20,160",
+        "content": [
+            "of those previous",
+            "view box values"
+        ]
+    },
+    {
+        "startTime": "00:04:20,160",
+        "endTime": "00:04:24,830",
+        "content": [
+            "where one is the height--",
+            "maximum height-- and 1100."
+        ]
+    },
+    {
+        "startTime": "00:04:24,830",
+        "endTime": "00:04:27,630",
+        "content": [
+            "Anyway, that all now",
+            "works brilliantly."
+        ]
+    },
+    {
+        "startTime": "00:04:27,630",
+        "endTime": "00:04:29,740",
+        "content": [
+            "So, it's just more",
+            "that I've kind of"
+        ]
+    },
+    {
+        "startTime": "00:04:29,740",
+        "endTime": "00:04:33,090",
+        "content": [
+            "cracked that particular",
+            "problem for now,"
+        ]
+    },
+    {
+        "startTime": "00:04:33,090",
+        "endTime": "00:04:34,660",
+        "content": [
+            "which is kind of a weight off."
+        ]
+    },
+    {
+        "startTime": "00:04:34,660",
+        "endTime": "00:04:36,160",
+        "content": [
+            "The only thing that",
+            "really caught me"
+        ]
+    },
+    {
+        "startTime": "00:04:36,160",
+        "endTime": "00:04:38,930",
+        "content": [
+            "out when I was looking around,",
+            "was I couldn't get clip-path"
+        ]
+    },
+    {
+        "startTime": "00:04:38,930",
+        "endTime": "00:04:39,430",
+        "content": [
+            "to work."
+        ]
+    },
+    {
+        "startTime": "00:04:39,430",
+        "endTime": "00:04:42,740",
+        "content": [
+            "It doesn't throw any kind of",
+            "warning or error in Chrome."
+        ]
+    },
+    {
+        "startTime": "00:04:42,740",
+        "endTime": "00:04:45,090",
+        "content": [
+            "It just doesn't do anything."
+        ]
+    },
+    {
+        "startTime": "00:04:45,090",
+        "endTime": "00:04:47,660",
+        "content": [
+            "It's still WebKit prefixed."
+        ]
+    },
+    {
+        "startTime": "00:04:47,660",
+        "endTime": "00:04:50,620",
+        "content": [
+            "But yet, it's got a",
+            "line through it saying"
+        ]
+    },
+    {
+        "startTime": "00:04:50,620",
+        "endTime": "00:04:53,420",
+        "content": [
+            "it's being overridden by this."
+        ]
+    },
+    {
+        "startTime": "00:04:53,420",
+        "endTime": "00:04:56,200",
+        "content": [
+            "So I think I'm going",
+            "to file a bug that says"
+        ]
+    },
+    {
+        "startTime": "00:04:56,200",
+        "endTime": "00:04:57,490",
+        "content": [
+            "it should be one or the other."
+        ]
+    },
+    {
+        "startTime": "00:04:57,490",
+        "endTime": "00:05:00,489",
+        "content": [
+            "We should kind of put something",
+            "against click-path that says,"
+        ]
+    },
+    {
+        "startTime": "00:05:00,489",
+        "endTime": "00:05:02,030",
+        "content": [
+            "actually, I don't",
+            "support click-path."
+        ]
+    },
+    {
+        "startTime": "00:05:02,030",
+        "endTime": "00:05:04,700",
+        "content": [
+            "Or if we do, we should actually",
+            "support click-path rather than"
+        ]
+    },
+    {
+        "startTime": "00:05:04,700",
+        "endTime": "00:05:07,970",
+        "content": [
+            "WebKit click-path."
+        ]
+    },
+    {
+        "startTime": "00:05:07,970",
+        "endTime": "00:05:09,540",
+        "content": [
+            "Wow, I didn't realize",
+            "that was going"
+        ]
+    },
+    {
+        "startTime": "00:05:09,540",
+        "endTime": "00:05:11,820",
+        "content": [
+            "to be a hard word to say today."
+        ]
+    },
+    {
+        "startTime": "00:05:11,820",
+        "endTime": "00:05:12,960",
+        "content": [
+            "So there you go."
+        ]
+    },
+    {
+        "startTime": "00:05:12,960",
+        "endTime": "00:05:15,300",
+        "content": [
+            "Clipping with SVG on",
+            "SVG Elements, that"
+        ]
+    },
+    {
+        "startTime": "00:05:15,300",
+        "endTime": "00:05:19,560",
+        "content": [
+            "should mean that I can",
+            "do this kind of effect"
+        ]
+    },
+    {
+        "startTime": "00:05:19,560",
+        "endTime": "00:05:23,162",
+        "content": [
+            "and then have other stuff",
+            "behind it peeking through"
+        ]
+    },
+    {
+        "startTime": "00:05:23,162",
+        "endTime": "00:05:24,120",
+        "content": [
+            "and all the rest of it."
+        ]
+    },
+    {
+        "startTime": "00:05:24,120",
+        "endTime": "00:05:26,250",
+        "content": [
+            "Which is exactly the",
+            "effect that I want,"
+        ]
+    },
+    {
+        "startTime": "00:05:26,250",
+        "endTime": "00:05:29,650",
+        "content": [
+            "and I didn't know exactly how",
+            "I was going to achieve it."
+        ]
+    },
+    {
+        "startTime": "00:05:29,650",
+        "endTime": "00:05:31,460",
+        "content": [
+            "Phew, weight off."
+        ]
+    },
+    {
+        "startTime": "00:05:31,460",
+        "endTime": "00:05:33,781",
+        "content": [
+            "Don't forget to",
+            "subscribe if you want"
+        ]
+    },
+    {
+        "startTime": "00:05:33,781",
+        "endTime": "00:05:35,030",
+        "content": [
+            "to catch more of these videos."
+        ]
+    },
+    {
+        "startTime": "00:05:35,030",
+        "endTime": "00:05:36,738",
+        "content": [
+            "And you can check out",
+            "the code on GitHub."
+        ]
+    },
+    {
+        "startTime": "00:05:36,738",
+        "endTime": "00:05:39,160",
+        "content": [
+            "I've been pushing stuff there."
+        ]
+    },
+    {
+        "startTime": "00:05:39,160",
+        "endTime": "00:05:39,760",
+        "content": [
+            "Toodle-oo."
+        ]
+    },
+    {
+        "startTime": "00:05:39,760",
+        "endTime": "00:05:43,110",
+        "content": [
+            "[MUSIC PLAYING]"
+        ]
+    },
+    {
+        "startTime": "00:05:43,110",
+        "endTime": "00:05:52,988",
+        "content": []
+    }
+]
