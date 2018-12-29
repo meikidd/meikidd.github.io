@@ -1,0 +1,19 @@
+
+  .current {
+    color: red;
+  }
+  .back-btn {
+    padding: 10px;
+    display: block;
+  }
+  #countdown {
+    height: 2px;
+    background-color: green;
+    transition: width 3s linear;
+    width: 100%;
+    visibility: hidden;
+  }
+  .countdown.start {
+    width: 0%;
+    visibility: visible;
+  }

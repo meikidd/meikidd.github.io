@@ -4,66 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script src="./subtitles/building-a-website-04.js"></script>
-  <style>
-  .current {
-    color: red;
-  }</style>
+  <title>building-a-website-04</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+  <div>
+    <a class="back-btn" href="./index.html">&lt;back</a>
+  </div>
   <audio id="audio-player" controls autoplay src="./audios/building-a-website-04.mp3"></audio>
-  <pre id="subtitle">
-
-  </pre>
-  <script>
-    let i = 0;
-    const player = document.querySelector('#audio-player');
-    showSubtitle(i);
-    
-    player.addEventListener('timeupdate', function() {
-      let currentSentence = subtitle[i];
-      if(player.currentTime > currentSentence.endTime) {
-        const sentenceDuration = currentSentence.endTime - currentSentence.startTime;
-        player.pause();
-        i++;
-        setTimeout(() => {
-          player.currentTime = player.currentTime - 0.5
-          player.play();
-          showSubtitle(i);
-        }, sentenceDuration * 2000);
-      }
-    });
-
-    function showSubtitle(i) {
-      let innerHTML = '';
-      const length = subtitle.length;
-
-      if(i - 2 >= 0) {
-        innerHTML += subtitle[i-2].content.join('\n');
-        innerHTML += '\n\n\n';
-      }
-      if(i - 1 >= 0) {
-        innerHTML += subtitle[i-1].content.join('\n');
-        innerHTML += '\n\n\n';
-      }
-
-      innerHTML += '<pre class="current">';
-      innerHTML += subtitle[i].content.join('\n');
-      innerHTML += '</pre>';
-      innerHTML += '\n\n\n';
-
-      if(i + 1 < length) {
-        innerHTML += subtitle[i+1].content.join('\n');
-        innerHTML += '\n\n\n';
-      }
-      if(i + 2 < length) {
-        innerHTML += subtitle[i+2].content.join('\n');
-        innerHTML += '\n\n\n';
-      }
-      const subtitleElm = document.querySelector('#subtitle');
-      subtitleElm.innerHTML = innerHTML;
-    }
-  </script>
+  <div class="countdown"></div>
+  <pre id="subtitle"></pre>
+  
+  <script src="./subtitles/building-a-website-04.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
