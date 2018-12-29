@@ -23,23 +23,11 @@ var subtitle = [
     },
     {
         "startTime": 15.35,
-        "endTime": 16.6,
-        "content": [
-            "And I was thinking about this."
-        ]
-    },
-    {
-        "startTime": 16.6,
-        "endTime": 18.68,
-        "content": [
-            "There's kind of a couple",
-            "of ways you could do it."
-        ]
-    },
-    {
-        "startTime": 18.68,
         "endTime": 25.61,
         "content": [
+            "And I was thinking about this.",
+            "There's kind of a couple",
+            "of ways you could do it.",
             "One would be, you actually just",
             "have the image as a rectangle,",
             "and then you kind of overlay",
@@ -49,16 +37,10 @@ var subtitle = [
     },
     {
         "startTime": 25.61,
-        "endTime": 27.99,
-        "content": [
-            "Like, say, using",
-            "SVG or something."
-        ]
-    },
-    {
-        "startTime": 27.99,
         "endTime": 35.762,
         "content": [
+            "Like, say, using",
+            "SVG or something.",
             "And that's actually what I",
             "did in the holding page--",
             "the announcement page here."
@@ -75,16 +57,10 @@ var subtitle = [
     },
     {
         "startTime": 40.21,
-        "endTime": 42.83,
-        "content": [
-            "It has a slight",
-            "angle on it upwards."
-        ]
-    },
-    {
-        "startTime": 42.83,
         "endTime": 53.71,
         "content": [
+            "It has a slight",
+            "angle on it upwards.",
             "But the thing is, when",
             "you've got that triangle,",
             "when it butts up to the",
@@ -108,16 +84,10 @@ var subtitle = [
     },
     {
         "startTime": 63.66,
-        "endTime": 66.273,
-        "content": [
-            "Anyway, so I was like, OK, I",
-            "need to find a different way."
-        ]
-    },
-    {
-        "startTime": 66.273,
         "endTime": 69.46,
         "content": [
+            "Anyway, so I was like, OK, I",
+            "need to find a different way.",
             "And I've been messing",
             "around with SVG."
         ]
@@ -132,17 +102,11 @@ var subtitle = [
     },
     {
         "startTime": 73.932,
-        "endTime": 77.17,
+        "endTime": 80.919,
         "content": [
             "Here's what I",
             "actually have, right?",
-            "So, I've got the image."
-        ]
-    },
-    {
-        "startTime": 77.17,
-        "endTime": 80.919,
-        "content": [
+            "So, I've got the image.",
             "And, see, that kind",
             "of roughly works."
         ]
@@ -158,16 +122,10 @@ var subtitle = [
     },
     {
         "startTime": 88.67,
-        "endTime": 92.474,
-        "content": [
-            "What we've got is there's",
-            "an image which is a pattern."
-        ]
-    },
-    {
-        "startTime": 92.474,
         "endTime": 98.25,
         "content": [
+            "What we've got is there's",
+            "an image which is a pattern.",
             "So, there's a",
             "rectangle here which",
             "uses the image as a pattern."
@@ -185,16 +143,10 @@ var subtitle = [
     },
     {
         "startTime": 104.99,
-        "endTime": 108,
-        "content": [
-            "Because this was kind",
-            "of where I got to."
-        ]
-    },
-    {
-        "startTime": 108,
         "endTime": 111.78,
         "content": [
+            "Because this was kind",
+            "of where I got to.",
             "And then there's a",
             "clip-path of this clip."
         ]
@@ -211,16 +163,10 @@ var subtitle = [
     },
     {
         "startTime": 119.75,
-        "endTime": 121.98,
-        "content": [
-            "It's all kind of kept",
-            "broadly in proportion."
-        ]
-    },
-    {
-        "startTime": 121.98,
         "endTime": 125.82,
         "content": [
+            "It's all kind of kept",
+            "broadly in proportion.",
             "I don't mind the",
             "angle of the triangle",
             "kind of squishing in and out."
@@ -228,16 +174,10 @@ var subtitle = [
     },
     {
         "startTime": 125.82,
-        "endTime": 129.44,
-        "content": [
-            "It just has to look OK-ish",
-            "for the screen size it's on."
-        ]
-    },
-    {
-        "startTime": 129.44,
         "endTime": 138.14,
         "content": [
+            "It just has to look OK-ish",
+            "for the screen size it's on.",
             "The problem is the",
             "effect isn't what I want,",
             "because the image is kind of",
@@ -256,15 +196,9 @@ var subtitle = [
     },
     {
         "startTime": 146.44,
-        "endTime": 147.97,
-        "content": [
-            "So I was like, OK."
-        ]
-    },
-    {
-        "startTime": 147.97,
         "endTime": 150.85,
         "content": [
+            "So I was like, OK.",
             "Why don't we do preserve",
             "aspect ratio none."
         ]
@@ -318,15 +252,9 @@ var subtitle = [
     },
     {
         "startTime": 184.55,
-        "endTime": 187.4,
-        "content": [
-            "Whereas with the-- anyway."
-        ]
-    },
-    {
-        "startTime": 187.4,
         "endTime": 209.41,
         "content": [
+            "Whereas with the-- anyway.",
             "This isn't working",
             "for me, right?",
             "But Chris Coyier--",
@@ -392,15 +320,9 @@ var subtitle = [
     },
     {
         "startTime": 241.71,
-        "endTime": 245.67,
-        "content": [
-            "But, I switch on the clip-path."
-        ]
-    },
-    {
-        "startTime": 245.67,
         "endTime": 252.56,
         "content": [
+            "But, I switch on the clip-path.",
             "And the clip-path is",
             "just basically this SVG",
             "with a clip-path that's defined",
@@ -421,16 +343,10 @@ var subtitle = [
     },
     {
         "startTime": 264.83,
-        "endTime": 267.63,
-        "content": [
-            "Anyway, that all now",
-            "works brilliantly."
-        ]
-    },
-    {
-        "startTime": 267.63,
         "endTime": 274.66,
         "content": [
+            "Anyway, that all now",
+            "works brilliantly.",
             "So, it's just more",
             "that I've kind of",
             "cracked that particular",
@@ -451,30 +367,18 @@ var subtitle = [
     },
     {
         "startTime": 279.43,
-        "endTime": 282.74,
-        "content": [
-            "It doesn't throw any kind of",
-            "warning or error in Chrome."
-        ]
-    },
-    {
-        "startTime": 282.74,
         "endTime": 285.09,
         "content": [
+            "It doesn't throw any kind of",
+            "warning or error in Chrome.",
             "It just doesn't do anything."
         ]
     },
     {
         "startTime": 285.09,
-        "endTime": 287.66,
-        "content": [
-            "It's still WebKit prefixed."
-        ]
-    },
-    {
-        "startTime": 287.66,
         "endTime": 293.42,
         "content": [
+            "It's still WebKit prefixed.",
             "But yet, it's got a",
             "line through it saying",
             "it's being overridden by this."
@@ -510,17 +414,11 @@ var subtitle = [
     },
     {
         "startTime": 307.97,
-        "endTime": 311.82,
+        "endTime": 312.96,
         "content": [
             "Wow, I didn't realize",
             "that was going",
-            "to be a hard word to say today."
-        ]
-    },
-    {
-        "startTime": 311.82,
-        "endTime": 312.96,
-        "content": [
+            "to be a hard word to say today.",
             "So there you go."
         ]
     },
@@ -549,15 +447,9 @@ var subtitle = [
     },
     {
         "startTime": 329.65,
-        "endTime": 331.46,
-        "content": [
-            "Phew, weight off."
-        ]
-    },
-    {
-        "startTime": 331.46,
         "endTime": 335.03,
         "content": [
+            "Phew, weight off.",
             "Don't forget to",
             "subscribe if you want",
             "to catch more of these videos."
@@ -565,30 +457,18 @@ var subtitle = [
     },
     {
         "startTime": 335.03,
-        "endTime": 336.738,
-        "content": [
-            "And you can check out",
-            "the code on GitHub."
-        ]
-    },
-    {
-        "startTime": 336.738,
         "endTime": 339.16,
         "content": [
+            "And you can check out",
+            "the code on GitHub.",
             "I've been pushing stuff there."
         ]
     },
     {
         "startTime": 339.16,
-        "endTime": 339.76,
-        "content": [
-            "Toodle-oo."
-        ]
-    },
-    {
-        "startTime": 339.76,
         "endTime": 0,
         "content": [
+            "Toodle-oo.",
             "[MUSIC PLAYING]"
         ]
     }
