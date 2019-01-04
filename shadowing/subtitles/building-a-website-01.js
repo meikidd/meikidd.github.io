@@ -53,12 +53,11 @@ var subtitle = [
       "endTime": 48.21,
       "content": [
           "For now, I just know I've got",
-          "to get infrastructure setup.",
-          "So I figure I'll show you",
+          "infrastructure setup.",
+          "So I'll show you",
           "a little bit around what",
           "I've got going on,",
-          "which, as it happens,",
-          "will involve looking at",
+          "which will involve looking at",
           "me having written the word",
           "\"index,\" apparently."
       ]
